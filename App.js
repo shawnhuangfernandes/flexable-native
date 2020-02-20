@@ -1,19 +1,25 @@
+// React Native imports
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
+// Custom imports
+import colors from './constants/colors'
+import LandingScreen from './screens/LandingScreen'
+
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+    <View style={styles.screen}>
+          <LandingScreen/>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+  screen: {
+    height: '100%',
+    width: '100%',
+    paddingTop: 40,
+    paddingHorizontal: 15,
+    backgroundColor: colors.primary
   },
 });

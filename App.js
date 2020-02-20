@@ -6,11 +6,12 @@ import { StyleSheet, Text, View } from 'react-native';
 import colors from './constants/colors'
 import LandingScreen from './screens/LandingScreen'
 import AuthenticateScreen from './screens/AuthenticateScreen'
+import MenuSelectionScreen from './screens/MenuSelectionScreen'
 
 export default function App() {
   return (
     <View style={styles.screen}>
-          <AuthenticateScreen/>
+          <MenuSelectionScreen/>
     </View>
   );
 }

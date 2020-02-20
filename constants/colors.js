@@ -1,3 +1,4 @@
 export default {
-    primary: '#ff7f50'
+    primary: '#FF7F50',
+    paper: '#FAEBE8'
 };

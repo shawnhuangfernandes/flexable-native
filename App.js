@@ -5,11 +5,12 @@ import { StyleSheet, Text, View } from 'react-native';
 // Custom imports
 import colors from './constants/colors'
 import LandingScreen from './screens/LandingScreen'
+import AuthenticateScreen from './screens/AuthenticateScreen'
 
 export default function App() {
   return (
     <View style={styles.screen}>
-          <LandingScreen/>
+          <AuthenticateScreen/>
     </View>
   );
 }

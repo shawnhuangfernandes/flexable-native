@@ -23,6 +23,7 @@ export default function App() {
         screenOptions={{
           headerShown: false
         }}
+        initialRouteName="LandingScreen"
       >
         <Stack.Screen name="LandingScreen" component={LandingScreen} />
         <Stack.Screen name="AuthenticateScreen" component={AuthenticateScreen} />

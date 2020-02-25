@@ -1,25 +1,24 @@
 // React Native imports
 import React from "react";
-import { View, Button, Image, StyleSheet } from "react-native";
+import { View, Button, StyleSheet } from "react-native";
 
 // Custom imports
 import colors from "../constants/colors";
+import Header from "../components/Header";
+import ActiveImage from '../components/ActiveImage'
+import ButtonContainer from '../components/ButtonContainer'
 
 const LandingScreen = ({ navigation }) => {
   return (
     <View style={styles.screen}>
-      <View style={styles.header}>
-
-      </View>
-      <View style={styles.body}>
-        
-      </View>
-      <View style={styles.buttonContainer}>
-      <Button
-        title="To Login"
-        onPress={() => navigation.navigate("AuthenticateScreen")}
-      />
-      </View>
+      <Header />
+      <ActiveImage />
+      <ButtonContainer>
+        <Button
+          title="To Login"
+          onPress={() => navigation.navigate("AuthenticateScreen")}
+        />
+      </ButtonContainer>
     </View>
   );
 };
@@ -32,20 +31,6 @@ const styles = StyleSheet.create({
     borderWidth: 0,
     paddingHorizontal: 15,
     backgroundColor: colors.primary
-  },
-  header: {
-    backgroundColor: 'red',
-    height: '25%',
-  },
-  body: {
-    backgroundColor: 'green',
-    height: '50%',
-  },
-  buttonContainer: {
-    backgroundColor: 'blue',
-    height: '25%',
-    flexDirection: 'column',
-    justifyContent: 'center'
   }
 });
 

@@ -1,18 +1,33 @@
 // React imports
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native'
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+import {View, Text, Button, StyleSheet} from 'react-native'
+
+// Custom imports
+import colors from "../constants/colors";
 
 const AuthenticateScreen = ({navigation}) => {
     return (
-        <View>
+        <View style ={styles.screen}>
             <Text>
                 This is the login/signup screen
             </Text>
-            
+            <Button
+        title="To Menu Selection"
+        onPress={() => navigation.navigate("MenuSelectionScreen")}
+      />
         </View>
     );
 };
+
+const styles = StyleSheet.create({
+    screen: {
+      height: "100%",
+      width: "100%",
+      paddingTop: 40,
+      paddingHorizontal: 15,
+      borderWidth: 0,
+      backgroundColor: colors.primary
+    }
+  });
 
 export default AuthenticateScreen;
